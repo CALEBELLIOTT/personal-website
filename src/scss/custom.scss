@@ -1,9 +1,12 @@
-@import "~bootstrap/scss/bootstrap";
+//custom.scss
 
-$primary: #21d900;
-$danger: #ff4136;
 
-// $theme-colors: (
-//   "primary": $primary,
-//   "danger": $danger
-// );
+$primary: #d0daee;
+$secondary: #263C5C;
+$success: #49C96D;
+$danger: #FD7972;
+$warning: #FF965D;
+$light: #F8F8F8;
+$body-color: #d0daee;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

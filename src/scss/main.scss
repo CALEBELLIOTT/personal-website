@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Inter-light;
+  src: url('../typography/inter/Inter\ Desktop/Inter-Light.otf');
+}
+
+@font-face {
+  font-family: Inter-medium;
+  src: url('../typography/inter/Inter\ Desktop/Inter-Medium.otf');
+}
+
+
+body {
+  background-color: #0e1729;
+  font-family: 'Inter-medium';
+}
