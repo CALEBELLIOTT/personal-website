@@ -17,20 +17,31 @@ const socials = [
   }
 ]
 
-const SectionBar = ({ label, setActiveSections, activeSections, setSelectedSection, selectedSection }) => {
+const SectionBar = ({
+  label,
+  setActiveSections,
+  activeSections,
+  setSelectedSection,
+  selectedSection,
+  scrollToId }) => {
   const isActive = activeSections[label] || selectedSection === label
   return <div
     className="d-flex align-items-center my-4 clickable d-flex"
     onMouseEnter={() => setActiveSections({ ...activeSections, [label]: true })}
     onMouseLeave={() => setActiveSections({ ...activeSections, [label]: false })}
-    onClick={() => setSelectedSection(label)}
+    onClick={() => {
+      setSelectedSection(label)
+      // @ts-ignore
+      document.getElementById(scrollToId).scrollIntoView();
+    }
+    }
   >
     <div className={isActive ? 'section-bar-active' : 'section-bar'} />
     <p className={`m-0 ${!isActive && 'text-muted'} ms-2`}>{label}</p>
-  </div>
+  </div >
 }
 
-const NameSticky = ({ isMobile }) => {
+const NameSticky = () => {
   const [activeSections, setActiveSections] = useState({})
   const [selectedSection, setSelectedSection] = useState('')
 
@@ -45,17 +56,20 @@ const NameSticky = ({ isMobile }) => {
             setActiveSections={setActiveSections}
             activeSections={activeSections}
             setSelectedSection={setSelectedSection}
-            selectedSection={selectedSection} />
+            selectedSection={selectedSection}
+            scrollToId={'about-section'} />
           <SectionBar label={'Experience'}
             setActiveSections={setActiveSections}
             activeSections={activeSections}
             setSelectedSection={setSelectedSection}
-            selectedSection={selectedSection} />
+            selectedSection={selectedSection}
+            scrollToId={'experience-section'} />
           <SectionBar label={'Blog'}
             setActiveSections={setActiveSections}
             activeSections={activeSections}
             setSelectedSection={setSelectedSection}
-            selectedSection={selectedSection} />
+            selectedSection={selectedSection}
+            scrollToId={'blog-section'} />
         </div>
       </div>
       <div className="d-flex justify-content-between w-50 mt-5">

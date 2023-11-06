@@ -28,15 +28,18 @@ function App() {
         <Row>
           <Col md={6}>
             <div className={!isMobile ? `name-sticky-container` : ''}>
-              <NameSticky isMobile={isMobile} />
+              <NameSticky />
             </div>
           </Col>
           <Col md={6}>
-            <div className="mt-5 mt-md-0">
+            <div className="mt-5 mt-md-0" id='about-section'>
               <Biography />
             </div>
-            <div className="experience-section">
+            <div className="experience-section" id='experience-section'>
               <Experience />
+            </div>
+            <div className="mt-5" id='blog-section'>
+
             </div>
           </Col>
         </Row>
