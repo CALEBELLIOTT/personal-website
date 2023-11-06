@@ -1,15 +1,19 @@
 @font-face {
-  font-family: Inter-light;
-  src: url('../typography/inter/Inter\ Desktop/Inter-Light.otf');
-}
-
-@font-face {
   font-family: Inter-medium;
-  src: url('../typography/inter/Inter\ Desktop/Inter-Medium.otf');
+  src: url('../typography/inter/Inter\ Web/Inter-Regular.woff');
 }
 
 
 body {
+  background: radial-gradient(at top left,
+      #182848, #0e1729);
   background-color: #0e1729;
-  font-family: 'Inter-medium';
+  font-family: 'Prata';
+  background-repeat: no-repeat;
+}
+
+.clickable {
+  &:hover {
+    cursor: pointer;
+  }
 }
