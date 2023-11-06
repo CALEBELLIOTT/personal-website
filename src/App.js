@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from "react";
-import { Col, Container, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
-import Header from "./components/Header";
+import { Col, Row } from "react-bootstrap";
 import NameSticky from "./components/NameSticky/NameSticky";
 import Biography from "./components/Biography/Biography";
+import Experience from "./components/Experience/Experience";
 
 function App() {
 
@@ -27,11 +27,16 @@ function App() {
       <div className="container mt-5">
         <Row>
           <Col md={6}>
-            <NameSticky isMobile={isMobile} />
+            <div className={!isMobile ? `name-sticky-container` : ''}>
+              <NameSticky isMobile={isMobile} />
+            </div>
           </Col>
-          <Col>
+          <Col md={6}>
             <div className="mt-5 mt-md-0">
               <Biography />
+            </div>
+            <div className="experience-section">
+              <Experience />
             </div>
           </Col>
         </Row>

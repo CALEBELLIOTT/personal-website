@@ -1,0 +1,17 @@
+.inactive-filter {
+  filter: brightness(50%);
+  transition: 250ms ease-in-out;
+}
+
+.active-container {
+  background-color: #122b40;
+  border-radius: 15px;
+}
+
+.skill-container {
+  background-color: #4ac96e1a;
+  /* border: 1px #4ac96e solid; */
+  border-radius: 15px;
+  font-size: .875rem;
+  height: fit-content;
+}
