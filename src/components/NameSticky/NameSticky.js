@@ -21,16 +21,13 @@ const SectionBar = ({
   label,
   setActiveSections,
   activeSections,
-  setSelectedSection,
-  selectedSection,
   scrollToId }) => {
-  const isActive = activeSections[label] || selectedSection === label
+  const isActive = activeSections[label]
   return <div
     className="d-flex align-items-center my-4 clickable d-flex"
     onMouseEnter={() => setActiveSections({ ...activeSections, [label]: true })}
     onMouseLeave={() => setActiveSections({ ...activeSections, [label]: false })}
     onClick={() => {
-      setSelectedSection(label)
       // @ts-ignore
       document.getElementById(scrollToId).scrollIntoView();
     }
@@ -55,20 +52,14 @@ const NameSticky = () => {
           <SectionBar label={'About'}
             setActiveSections={setActiveSections}
             activeSections={activeSections}
-            setSelectedSection={setSelectedSection}
-            selectedSection={selectedSection}
             scrollToId={'app'} />
           <SectionBar label={'Experience'}
             setActiveSections={setActiveSections}
             activeSections={activeSections}
-            setSelectedSection={setSelectedSection}
-            selectedSection={selectedSection}
             scrollToId={'experience-section'} />
           <SectionBar label={'Projects'}
             setActiveSections={setActiveSections}
             activeSections={activeSections}
-            setSelectedSection={setSelectedSection}
-            selectedSection={selectedSection}
             scrollToId={'projects-section'} />
         </div>
       </div>
