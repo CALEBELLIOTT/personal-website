@@ -4,6 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import NameSticky from "./components/NameSticky/NameSticky";
 import Biography from "./components/Biography/Biography";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
   const isMobile = width < 768;
 
   return (
-    <div className="App">
+    <div className="App" id="app">
       <div className="container mt-5">
         <Row>
           <Col md={6}>
@@ -38,8 +39,8 @@ function App() {
             <div className="experience-section" id='experience-section'>
               <Experience />
             </div>
-            <div className="mt-5" id='blog-section'>
-
+            <div className="mt-5" id='projects-section'>
+              <Projects />
             </div>
           </Col>
         </Row>

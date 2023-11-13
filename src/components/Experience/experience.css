@@ -6,6 +6,11 @@
 .active-container {
   background-color: #cdcdcd0c;
   border-radius: 15px;
+  transition: 250ms ease-in-out;
+}
+
+.container {
+  transition: 250ms ease-in-out;
 }
 
 .skill-container {

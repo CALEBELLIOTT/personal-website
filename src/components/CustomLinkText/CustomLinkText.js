@@ -1,9 +1,9 @@
 import React, { useState } from "react"
+import { BoxArrowUpRight } from "react-bootstrap-icons"
 
 
-const CustomLinkText = ({ href, text, spaceEnds }) => {
+const CustomLinkText = ({ href, text, spaceEnds, includeIcon = false }) => {
   const [hovered, setHovered] = useState(false)
-  console.log(hovered)
   return <a
     href={href}
     target={'_blank'}
@@ -13,6 +13,7 @@ const CustomLinkText = ({ href, text, spaceEnds }) => {
     style={{ textDecoration: 'none' }}
   >
     {`${spaceEnds ? ' ' : ''}${text}${spaceEnds ? ' ' : ''}`}
+    {includeIcon ? <span className="ms-2 link-icon"><BoxArrowUpRight /></span> : ''}
   </a>
 }
 

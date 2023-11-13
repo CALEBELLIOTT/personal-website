@@ -18,6 +18,12 @@ body {
   }
 }
 
+.default-cursor {
+  &:hover {
+    cursor: default;
+  }
+}
+
 .experience-section {
   margin-top: 7rem
 }
@@ -29,4 +35,8 @@ body {
 
 .font-small {
   font-size: .875rem;
+}
+
+.link-icon {
+  vertical-align: top;
 }

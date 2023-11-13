@@ -57,19 +57,19 @@ const NameSticky = () => {
             activeSections={activeSections}
             setSelectedSection={setSelectedSection}
             selectedSection={selectedSection}
-            scrollToId={'about-section'} />
+            scrollToId={'app'} />
           <SectionBar label={'Experience'}
             setActiveSections={setActiveSections}
             activeSections={activeSections}
             setSelectedSection={setSelectedSection}
             selectedSection={selectedSection}
             scrollToId={'experience-section'} />
-          <SectionBar label={'Blog'}
+          <SectionBar label={'Projects'}
             setActiveSections={setActiveSections}
             activeSections={activeSections}
             setSelectedSection={setSelectedSection}
             selectedSection={selectedSection}
-            scrollToId={'blog-section'} />
+            scrollToId={'projects-section'} />
         </div>
       </div>
       <div className="d-flex justify-content-between w-50 mt-5">

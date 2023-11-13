@@ -7,14 +7,14 @@ const experiences = [
     date: 'October 2022 - Present',
     location: 'Anchor Operating System',
     title: 'Software Engineer',
-    skills: ['React', 'Node', 'Serverless', 'GraphQL', 'Redux', 'Material-UI'],
+    skills: ['React', 'Node', 'Serverless', 'GraphQL', 'Redux', 'Material-UI', 'DynamoDB'],
     description: `Daily work on Anchor, a large scale software platform that provides a wide array of services related to ticketing. Services provided include: payment processing, ticketing, report generation, integration with 3rd party ticketing providers, helicopter flight scheduling, automated email and text services, and others.`
   },
   {
     date: 'May 2022 - Aug 2022',
     location: 'CodeWorks',
     title: 'Full Stack Developer Student',
-    skills: ['Vue', 'Node', 'CSS', 'Bootstrap', 'C#', '.Net'],
+    skills: ['Vue', 'Node', 'CSS', 'Bootstrap', 'C#', '.Net', 'MySQL', 'MongoDB'],
     description: `Worked individually and in teams to build client side software using JavaScript, MVC, Vue.js, HTML 5, CSS 3, and Bootstrap. Created REST APIs using technologies including Node.js, Express, .net C#, MySQL, and MongoDB.
 
     Created functional full-stack applications within teams and individually while implementing Scrum methodology.`
@@ -34,7 +34,7 @@ const ExperienceSection = ({
   const isActive = activeSection === location
   return (
     <Row
-      className={`mt-3 p-3 ${isInactive && 'inactive-filter'} clickable ${isActive && 'active-container'}`}
+      className={`mt-3 p-3 ${isInactive && 'inactive-filter'} default-cursor ${isActive && 'active-container'} container`}
       onMouseEnter={() => setActiveSection(location)}
       onMouseLeave={() => setActiveSection('')}
     >
