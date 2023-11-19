@@ -38,12 +38,12 @@ const ExperienceSection = ({
       onMouseEnter={() => setActiveSection(location)}
       onMouseLeave={() => setActiveSection('')}
     >
-      <Col xs={4}>
+      <Col md={4}>
         <p className="text-muted font-small">
           {date}
         </p>
       </Col>
-      <Col xs={8}>
+      <Col md={8}>
         <p className="text-success m-0">
           {title}
         </p>
@@ -54,7 +54,7 @@ const ExperienceSection = ({
           {description}
         </p>
         <div className="d-flex flex-wrap">
-          {skills.map(skill => <div className="skill-container p-2 mx-2 my-1"><p className="m-0 text-success">{skill}</p></div>)}
+          {skills.map(skill => <div className="skill-container p-2 mx-2 my-1"><p className="m-0 text-success font-small">{skill}</p></div>)}
         </div>
       </Col>
     </Row>
