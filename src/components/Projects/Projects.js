@@ -29,7 +29,7 @@ const projectsData = [
   }
 ]
 
-const currentSiteTechnologies = ['react', 'bootstrap']
+const currentSiteTechnologies = ['React', 'Bootstrap', 'Contentful API']
 
 const ProjectItem = ({ name, description, technology, image, setActiveSection, activeSection, link }) => {
   const isInactive = activeSection && activeSection !== name
@@ -42,7 +42,7 @@ const ProjectItem = ({ name, description, technology, image, setActiveSection, a
       <div className="col-md-4">
         <img src={image} className="project-img" />
       </div>
-      <div className="col">
+      <div className="col mt-2 mt-md-0">
         <CustomLinkText href={link} text={name} spaceEnds={true} includeIcon={true} />
         <p className="text-muted font-small">{description}</p>
         <div className="d-flex flex-wrap">

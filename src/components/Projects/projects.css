@@ -4,5 +4,7 @@
 }
 
 .projects-section {
-  margin-top: 8rem;
+  @media (min-width: 756px) {
+    margin-top: 8rem;
+  }
 }

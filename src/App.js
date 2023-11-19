@@ -5,6 +5,7 @@ import NameSticky from "./components/NameSticky/NameSticky";
 import Biography from "./components/Biography/Biography";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
+// import Blogs from "./components/Blogs/Blogs";
 
 function App() {
 
@@ -42,6 +43,9 @@ function App() {
             <div className="mt-5" id='projects-section'>
               <Projects />
             </div>
+            {/* <div className="mt-5" id='blogs-section'>
+              <Blogs />
+            </div> */}
           </Col>
         </Row>
       </div>
