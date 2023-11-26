@@ -1,0 +1,7 @@
+.header-container {
+  width: 100%;
+  background-color: #1d3259be;
+  position: sticky;
+  top: 0;
+  transition: 1000ms ease-in-out;
+}
