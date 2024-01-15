@@ -6,6 +6,8 @@ import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import MobileHeader from "./components/MobileHeader/MobileHeader";
 import { useInView } from 'react-intersection-observer';
+import GetInTouch from "./components/GetInTouch/GetInTouch";
+import Blog from "./components/Blog/Blog";
 // import Blogs from "./components/Blogs/Blogs";
 
 
@@ -33,12 +35,6 @@ function App() {
   const { ref: aboutSectionRef, inView: aboutSectionVisible } = useInView();
   const { ref: experienceSectionRef, inView: experienceSectionVisible } = useInView();
   const { ref: projectsSectionRef, inView: projectsSectionVisible } = useInView();
-
-  console.log({
-    aboutSectionVisible,
-    experienceSectionVisible,
-    projectsSectionVisible
-  });
   const activeSection = getActiveSection({
     aboutSectionVisible,
     experienceSectionVisible,
@@ -93,6 +89,12 @@ function App() {
             {/* <div className="mt-5" id='blogs-section'>
               <Blogs />
             </div> */}
+          </Col>
+          <Col md={12}>
+            <Blog />
+          </Col>
+          <Col md={12}>
+            {/* <GetInTouch isMobile={isMobile} /> */}
           </Col>
         </Row>
       </div>

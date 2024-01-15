@@ -1,0 +1,17 @@
+.form-control:not(active) {
+  color: rgb(192, 57, 57);
+}
+
+.form-control:focus {
+  color: black;
+}
+
+.form-control {
+  background-color: #d0daee !important;
+  border: #263C5C solid 1px !important;
+  color: #263C5C !important;
+}
+
+.width-50 {
+  max-width: 50vw;
+}
