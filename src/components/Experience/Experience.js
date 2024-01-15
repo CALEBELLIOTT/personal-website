@@ -63,11 +63,16 @@ const ExperienceSection = ({
 }
 
 
-const Experience = () => {
+const Experience = ({ isMobile }) => {
   const [activeSection, setActiveSection] = useState('')
 
   return (
     <div>
+      {isMobile && <Col md={12}>
+        <h3 className="mt-4 fw-bold text-success">
+          Experience
+        </h3>
+      </Col>}
       {experiences.map(({ date, location, title, skills, description }) => (
         <ExperienceSection
           date={date}

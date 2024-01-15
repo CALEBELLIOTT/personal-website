@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import './projects.css'
 import CustomLinkText from "../CustomLinkText/CustomLinkText"
 import { ArrowRight, Github, Instagram, Linkedin } from "react-bootstrap-icons"
+import { Col } from "react-bootstrap"
 
 const projectsData = [
   {
@@ -55,10 +56,15 @@ const ProjectItem = ({ name, description, technology, image, setActiveSection, a
 
 
 
-const Projects = () => {
+const Projects = ({ isMobile }) => {
   const [activeSection, setActiveSection] = useState('')
   return (
     <div className="container-fluid projects-section">
+      {isMobile && <Col md={12}>
+        <h3 className="mt-4 fw-bold text-success">
+          Projects
+        </h3>
+      </Col>}
       {
         projectsData.map(({ name, description, technology, image, link }) => (
           <div key={name} className="default-cursor">

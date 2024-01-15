@@ -61,7 +61,7 @@ function App() {
 
   return (
     <div className="App" id="app">
-      <MobileHeader activeSection={activeSection} />
+      {/* <MobileHeader activeSection={activeSection} /> */}
       <div className="container mt-5">
         <Row>
           <Col md={6}>
@@ -82,13 +82,13 @@ function App() {
               className="experience-section"
               id='experience-section'
               ref={experienceSectionRef}>
-              <Experience />
+              <Experience isMobile={isMobile} />
             </div>
             <div
               className="mt-5"
               id='projects-section'
               ref={projectsSectionRef}>
-              <Projects />
+              <Projects isMobile={isMobile} />
             </div>
             {/* <div className="mt-5" id='blogs-section'>
               <Blogs />
