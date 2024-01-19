@@ -86,7 +86,7 @@ const Experience = ({ isMobile }) => {
       ))}
       <div className="mt-2 ms-2">
         <CustomLinkText
-          href={'https://caleb-elliott-assets.s3.us-west-2.amazonaws.com/Resume2023.pdf'}
+          href={'https://caleb-elliott-assets.s3.us-west-2.amazonaws.com/caleb_elliott_resume.pdf'}
           text={'View Full CV'}
           includeIcon={true}
           spaceEnds={false}
