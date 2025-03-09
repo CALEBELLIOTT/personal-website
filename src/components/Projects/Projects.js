@@ -5,27 +5,12 @@ import { Col } from 'react-bootstrap';
 
 const projectsData = [
   {
-    name: 'On-Tracker',
-    description: `Application for contractors to manage employees, schedule jobs,
-    and contact clients. UI includes a dynamic map where users can drop custom pins.`,
-    technology: ['Vue', 'Node.js', 'MapBox', 'Web-Socket'],
-    image: 'https://caleb-elliott-assets.s3.us-west-2.amazonaws.com/onTracker.png',
-    link: 'https://github.com/CALEBELLIOTT/on-tracker',
-  },
-  {
-    name: 'Tower',
-    description: `Small ticketing application where users can post events, RSVP to other's events, and comment on postings.`,
-    technology: ['Vue', '.net C#', 'mySQL'],
-    image: 'https://caleb-elliott-assets.s3.us-west-2.amazonaws.com/tower.png',
-    link: 'https://github.com/CALEBELLIOTT/tower',
-  },
-  {
-    name: 'All-Spice',
-    description: `Recipe sharing app where users can create recipes with ingredients and steps. Users can also comment,
-    favorite, and categorize their recipes.`,
-    technology: ['Vue', 'Node.js', 'Bootstrap'],
-    image: 'https://caleb-elliott-assets.s3.us-west-2.amazonaws.com/allSpice.png',
-    link: 'https://github.com/CALEBELLIOTT/AllSpiceNode',
+    name: 'Dashify',
+    description: `Chrome extension which overwrites your new tab page to a Spotify dashboard where you can view
+    your spotify statistics and control playback.`,
+    technology: ['Typescript', 'React', 'Tailwind'],
+    image: 'https://caleb-elliott-assets.s3.us-west-2.amazonaws.com/dashify.png',
+    link: 'https://chromewebstore.google.com/detail/dashify/hnokfmokdpjdllpejcjgobfljlgheebp?hl=en',
   },
 ];
 
