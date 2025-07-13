@@ -18,15 +18,6 @@ const experiences = [
     skills: ['React', 'Node.js', 'Serverless', 'GraphQL', 'Redux', 'Material-UI', 'DynamoDB'],
     description: `Worked on a variety of features for the ticketing platform which powers famous attractions such as the Statue of Liberty, Alcatraz Island, Niagara Falls, and many others. Services rendered include payment processing, report generation, integration with third party ticketing providers, and more.`,
   },
-  {
-    date: 'May 2022 - Aug 2022',
-    location: 'CodeWorks',
-    title: 'Full Stack Developer Student',
-    skills: ['Vue', 'Node.js', 'CSS', 'Bootstrap', 'C#', '.Net', 'MySQL', 'MongoDB'],
-    description: `Worked individually and in teams to build client side software using JavaScript, Vue.js, HTML, CSS, and Bootstrap. Created REST APIs using technologies including Node.js, Express, .net C#, MySQL, and MongoDB.
-
-    Created full-stack applications within teams and individually while implementing Scrum methodology.`,
-  },
 ];
 
 const ExperienceSection = ({ date, title, location, skills, description, activeSection, setActiveSection }) => {
