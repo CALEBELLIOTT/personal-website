@@ -1,15 +1,15 @@
 .section-bar {
   height: 1px;
   width: 45px;
-  background-color: #d0daeebf;
-  transition: 150ms ease-in-out
+  background-color: var(--era-section-bar);
+  transition: var(--era-transition)
 }
 
 .section-bar-active {
   height: 2px;
   width: 75px;
-  background-color: #d0daee;
-  transition: 150ms ease-in-out
+  background-color: var(--era-section-bar-active);
+  transition: var(--era-transition)
 }
 
 .link-section {

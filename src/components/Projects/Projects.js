@@ -5,6 +5,13 @@ import { Col } from 'react-bootstrap';
 
 const projectsData = [
   {
+    name: 'FlareFi',
+    description: 'Website and blog where I build tools and write content for those pursuing financial independence.',
+    technology: ['Typescript', 'Next.js', 'visx'],
+    image: 'https://caleb-elliott-assets.s3.us-west-2.amazonaws.com/flare-fi.webp',
+    link: 'https://www.flarefi.co/',
+  },
+  {
     name: 'Dashify',
     description: `Chrome extension which overwrites your new tab page to a Spotify dashboard where you can view
     your spotify statistics and control playback.`,
@@ -65,32 +72,6 @@ const Projects = ({ isMobile }) => {
           />
         </div>
       ))}
-      <div className='row mt-4'>
-        <div className='col-12'>
-          <div className='d-flex flex-column align-items-center'>
-            <CustomLinkText
-              href={'https://github.com/CALEBELLIOTT/personal-website'}
-              text={'This Website!'}
-              includeIcon={false}
-              spaceEnds={false}
-            />
-            <p className='font-small text-muted text-center'>
-              Although heavily inspired by
-              <span>
-                <CustomLinkText href={'https://brittanychiang.com'} text={'Brittany Chiang'} spaceEnds={true} />
-              </span>
-              This site was coded from scratch myself and is deployed with AWS
-            </p>
-            <div className='d-flex flex-wrap'>
-              {currentSiteTechnologies.map((tech) => (
-                <div className='skill-container p-2 mx-2 my-1'>
-                  <p className='m-0 text-success'>{tech}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

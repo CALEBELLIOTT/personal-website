@@ -1,0 +1,122 @@
+/* Era Decorator Styles - primarily for 2000s era */
+
+/* Marquee */
+.era-marquee {
+  background: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #8B00FF);
+  padding: 8px 0;
+  border: 3px outset #808080;
+  margin-bottom: 15px;
+}
+
+.era-marquee marquee {
+  color: #FFFFFF;
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000;
+}
+
+/* Hit Counter */
+.hit-counter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.hit-counter-label {
+  font-family: 'Comic Sans MS', cursive;
+  color: #00FFFF;
+  font-size: 0.875rem;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.hit-counter {
+  font-family: 'Courier New', monospace;
+  background: #000000;
+  color: #00FF00;
+  padding: 5px 12px;
+  border: 3px inset #808080;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 5px #00FF00;
+}
+
+/* Under Construction */
+.under-construction {
+  text-align: center;
+  padding: 15px;
+  background: repeating-linear-gradient(
+    45deg,
+    #FFD700,
+    #FFD700 10px,
+    #000000 10px,
+    #000000 20px
+  );
+  border: 4px outset #808080;
+  margin: 20px 0;
+}
+
+.under-construction-text {
+  background: #FF0000;
+  color: #FFFF00;
+  padding: 8px 20px;
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+  border: 2px outset #FF6666;
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Blinking text utility */
+.blink-text {
+  animation: blink 1s step-end infinite;
+}
+
+/* Rainbow text utility */
+.rainbow-text {
+  background: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #8B00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: rainbow-shift 3s linear infinite;
+}
+
+@keyframes rainbow-shift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* Sparkle/star decorations */
+.sparkle {
+  display: inline-block;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* Guestbook-style section divider */
+.era-divider {
+  height: 10px;
+  background: linear-gradient(to right,
+    transparent,
+    #FF00FF,
+    #00FFFF,
+    #FFFF00,
+    #00FFFF,
+    #FF00FF,
+    transparent
+  );
+  margin: 20px 0;
+  border: 1px inset #808080;
+}

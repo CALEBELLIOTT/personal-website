@@ -1,22 +1,25 @@
 .inactive-filter {
   filter: brightness(50%);
-  transition: 250ms ease-in-out;
+  transition: var(--era-transition);
 }
 
 .active-container {
-  background-color: #cdcdcd0c;
-  border-radius: 15px;
-  transition: 250ms ease-in-out;
+  background-color: var(--era-card-bg);
+  border-radius: var(--era-border-radius);
+  transition: var(--era-transition);
+}
+
+.active-container:hover {
+  background-color: var(--era-card-bg-hover);
 }
 
 .container {
-  transition: 250ms ease-in-out;
+  transition: var(--era-transition);
 }
 
 .skill-container {
-  background-color: #4ac96e1a;
-  /* border: 1px #4ac96e solid; */
-  border-radius: 15px;
+  background-color: var(--era-accent-bg);
+  border-radius: var(--era-border-radius);
   font-size: .875rem;
   height: fit-content;
 }

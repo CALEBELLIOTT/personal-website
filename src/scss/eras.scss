@@ -1,0 +1,189 @@
+// Era-specific styles and CSS custom property defaults
+// These defaults are overridden at runtime by EraContext
+
+:root {
+  // Default values (Modern era)
+  --era-bg-primary: #0e1729;
+  --era-bg-secondary: #182848;
+  --era-text-primary: #d0daee;
+  --era-text-muted: #8892a6;
+  --era-accent: #59dcd5;
+  --era-accent-bg: rgba(74, 201, 110, 0.1);
+  --era-link-color: #59dcd5;
+  --era-font-heading: 'Prata', serif;
+  --era-font-body: 'Inter', -apple-system, sans-serif;
+  --era-border-radius: 15px;
+  --era-card-bg: rgba(205, 205, 205, 0.05);
+  --era-card-bg-hover: rgba(205, 205, 205, 0.08);
+  --era-section-bar: rgba(208, 218, 238, 0.75);
+  --era-section-bar-active: #d0daee;
+  --era-transition: 250ms ease-in-out;
+}
+
+// 2000s Era Specific Styles
+[data-era="2000s"] {
+  // Tiled starfield background
+  body {
+    background: var(--era-bg-primary) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.3'%3E%3Ccircle cx='10' cy='10' r='1'/%3E%3Ccircle cx='30' cy='45' r='0.5'/%3E%3Ccircle cx='50' cy='20' r='1'/%3E%3Ccircle cx='70' cy='80' r='0.5'/%3E%3Ccircle cx='90' cy='50' r='1'/%3E%3Ccircle cx='20' cy='70' r='0.5'/%3E%3Ccircle cx='60' cy='60' r='1'/%3E%3Ccircle cx='80' cy='30' r='0.5'/%3E%3Ccircle cx='40' cy='90' r='1'/%3E%3Ccircle cx='5' cy='55' r='0.5'/%3E%3Ccircle cx='95' cy='15' r='1'/%3E%3Ccircle cx='25' cy='25' r='0.5'/%3E%3Ccircle cx='75' cy='95' r='1'/%3E%3Ccircle cx='45' cy='5' r='0.5'/%3E%3Ccircle cx='85' cy='65' r='1'/%3E%3C/g%3E%3C/svg%3E") !important;
+    background-repeat: repeat !important;
+  }
+
+  // Beveled borders and outset effects
+  .container {
+    border: 3px outset #808080;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+
+  // Headers with glow effect
+  h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 0 10px var(--era-accent), 0 0 20px var(--era-accent);
+  }
+
+  // Links with classic blue/purple styling
+  a {
+    color: var(--era-link-color) !important;
+    text-decoration: underline !important;
+
+    &:visited {
+      color: #FF00FF !important;
+    }
+
+    &:hover {
+      color: #FFFFFF !important;
+      background-color: var(--era-link-color);
+    }
+  }
+
+  // Remove rounded corners
+  .active-container,
+  .skill-container,
+  .project-img,
+  img {
+    border-radius: 0 !important;
+  }
+
+  // Add beveled borders to cards/sections
+  .active-container {
+    border: 2px inset #808080 !important;
+  }
+
+  // Classic horizontal rules
+  hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #FFFF00, #FF00FF, #00FFFF, transparent);
+  }
+
+  // Blinking cursor for links
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  // Rainbow text animation
+  @keyframes rainbow {
+    0% { color: #FF0000; }
+    17% { color: #FF7F00; }
+    33% { color: #FFFF00; }
+    50% { color: #00FF00; }
+    67% { color: #0000FF; }
+    83% { color: #8B00FF; }
+    100% { color: #FF0000; }
+  }
+
+  .rainbow-text {
+    animation: rainbow 3s linear infinite;
+  }
+
+  // Scrolling marquee styling
+  .era-marquee {
+    background: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #8B00FF);
+    padding: 5px 0;
+    border: 2px outset #808080;
+    margin-bottom: 10px;
+  }
+
+  .era-marquee marquee {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #000000;
+  }
+
+  // Hit counter styling
+  .hit-counter {
+    font-family: 'Courier New', monospace;
+    background: #000000;
+    color: #00FF00;
+    padding: 5px 10px;
+    border: 2px inset #808080;
+    display: inline-block;
+  }
+
+  // Under construction banner
+  .under-construction {
+    text-align: center;
+    padding: 10px;
+    background: repeating-linear-gradient(
+      45deg,
+      #FFD700,
+      #FFD700 10px,
+      #000000 10px,
+      #000000 20px
+    );
+    border: 3px outset #808080;
+    margin: 10px 0;
+  }
+
+  .under-construction-text {
+    background: #FF0000;
+    color: #FFFF00;
+    padding: 5px 15px;
+    font-weight: bold;
+    display: inline-block;
+    animation: blink 0.5s step-end infinite;
+  }
+
+  // Table-like layouts
+  .row {
+    border: 1px solid #808080;
+  }
+
+  // Image borders like old web
+  img {
+    border: 3px ridge #808080 !important;
+  }
+
+  // Skill badges with 2000s style
+  .skill-container {
+    background: linear-gradient(to bottom, #0000FF, #000080) !important;
+    border: 2px outset #0000FF !important;
+    color: #FFFF00 !important;
+  }
+
+  // Section bars for 2000s
+  .section-bar {
+    background: linear-gradient(to right, transparent, #00FFFF, transparent) !important;
+    height: 2px !important;
+  }
+
+  .section-bar-active {
+    background: linear-gradient(to right, #FF00FF, #FFFF00, #00FFFF) !important;
+    height: 3px !important;
+  }
+}
+
+// Transition for era switching (applied to modern era)
+[data-era="modern"] {
+  body,
+  .container,
+  a,
+  h1, h2, h3, h4, h5, h6 {
+    transition: all 0.3s ease-in-out;
+  }
+}

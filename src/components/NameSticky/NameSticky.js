@@ -25,7 +25,6 @@ const SectionBar = ({ label, setActiveSections, activeSections, scrollToId }) =>
       onMouseEnter={() => setActiveSections({ ...activeSections, [label]: true })}
       onMouseLeave={() => setActiveSections({ ...activeSections, [label]: false })}
       onClick={() => {
-        // @ts-ignore
         document.getElementById(scrollToId).scrollIntoView();
       }}
     >
@@ -41,7 +40,7 @@ const NameSticky = () => {
   return (
     <div>
       <h1 className='mb-2'>Caleb Elliott</h1>
-      <h4 className='mt-2'>Engineer at Anchor Operating System</h4>
+      <h4 className='mt-2'>Software Engineer at Talkiatry</h4>
       <p className='text-muted caption mt-2 mb-5'>Building applications for the web</p>
       <div className='d-none d-md-block link-section'>
         <div>
@@ -67,7 +66,7 @@ const NameSticky = () => {
       </div>
       <div className='d-flex justify-content-between w-50 mt-5'>
         {socials.map(({ icon: Icon, link }) => (
-          <a href={link} target='_blank' rel='noreferrer'>
+          <a href={link} target='_blank' rel='noreferrer' key={link}>
             <h3 className='text-muted'>
               <Icon href={link} />
             </h3>

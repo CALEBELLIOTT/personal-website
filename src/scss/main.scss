@@ -1,3 +1,5 @@
+@import './eras.scss';
+
 @font-face {
   font-family: Inter-medium;
   src: url('../typography/inter/Inter\ Web/Inter-Regular.woff');
@@ -6,10 +8,12 @@
 
 body {
   background: radial-gradient(at top left,
-      #182848, #0e1729);
-  background-color: #0e1729;
-  font-family: 'Prata';
+      var(--era-bg-secondary), var(--era-bg-primary));
+  background-color: var(--era-bg-primary);
+  font-family: var(--era-font-heading);
+  color: var(--era-text-primary);
   background-repeat: no-repeat;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .clickable {
