@@ -21,8 +21,6 @@ const projectsData = [
   },
 ];
 
-const currentSiteTechnologies = ['React', 'Bootstrap', 'Contentful API'];
-
 const ProjectItem = ({ name, description, technology, image, setActiveSection, activeSection, link }) => {
   const isInactive = activeSection && activeSection !== name;
   const isActive = activeSection === name;

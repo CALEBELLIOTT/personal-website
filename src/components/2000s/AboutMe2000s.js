@@ -77,6 +77,7 @@ const AboutMe2000s = () => {
         <div className='y2k-skills-section'>
           <div className='y2k-skills-title'>MY AWESOME SKILLS:</div>
           <div className='y2k-skills-marquee'>
+            {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
             <marquee scrollamount='3'>
               ★ JavaScript ★ React ★ Node.js ★ TypeScript ★ PostgreSQL ★ AWS ★ Nest.js ★ DynamoDB ★
             </marquee>

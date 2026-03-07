@@ -72,6 +72,7 @@ const Footer2000s = () => {
 
       {/* Counter and date */}
       <div className='y2k-footer-info'>
+        {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
         <marquee scrollamount='2' className='y2k-footer-marquee'>
           ★ Thanks for visiting!!! ★ Come back soon!!! ★ You're awesome!!! ★ Have a great day!!! ★
         </marquee>

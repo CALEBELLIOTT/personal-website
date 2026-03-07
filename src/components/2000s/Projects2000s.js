@@ -81,6 +81,7 @@ const Projects2000s = () => {
 
         {/* Animated "more coming soon" */}
         <div className="y2k-coming-soon">
+          {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
           <marquee scrollamount="2">
             ★ More projects coming soon!!! Stay tuned!!! ★
             ★ More projects coming soon!!! Stay tuned!!! ★

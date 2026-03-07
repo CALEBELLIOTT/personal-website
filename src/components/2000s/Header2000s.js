@@ -38,6 +38,7 @@ const Header2000s = () => {
 
       {/* Marquee */}
       <div className='y2k-marquee-container'>
+        {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
         <marquee scrollamount='4' className='y2k-marquee'>
           ★★★ Welcome to my AWESOME Homepage!!! ★★★ Kick back and stay a while!!
         </marquee>
